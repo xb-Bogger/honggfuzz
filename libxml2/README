@@ -1,3 +1,15 @@
+# Simple command for fuzzing test
+
+```shell
+export CC=/home/user/Desktop/web/backend/fuzzers/honggfuzz/hfuzz_cc/hfuzz-clang
+export CXX=/home/user/Desktop/web/backend/fuzzers/honggfuzz/hfuzz_cc/hfuzz-clang++
+./autogen.sh
+./configure
+make
+sudo make install
+```
+
+# Origin content
 
                   XML toolkit from the GNOME project
 

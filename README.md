@@ -9,10 +9,12 @@ A security oriented, feedback-driven, evolutionary, easy-to-use fuzzer with inte
   * Latest stable version: [2.6](https://github.com/google/honggfuzz/releases)
   * [Changelog](https://github.com/google/honggfuzz/blob/master/CHANGELOG)
 
-## Installation
+## Installation and test in libxml2
 ```
 sudo apt-get install binutils-dev libunwind-dev libblocksruntime-dev clang
 make
+hfuzz_cc/hfuzz-clang examples/libxml2/persistent-xml2.c -Ilibxml2/ -Ilibxml2/include  libxml2/.libs/libxml2.a  /usr/lib/x86_64-linux-gnu/liblzma.a -lz -o persistent-xml2
+./honggfuzz -W out -f libfuzzer-workshop/lessons/08/corpus2/ -- ./persistent-xml2
 ```
 
 ## Features

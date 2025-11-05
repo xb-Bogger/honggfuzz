@@ -6,3 +6,6 @@
 	path = third_party/android/libunwind
 	url = https://github.com/libunwind/libunwind.git
 	branch = v1.6.2
+[submodule "libfuzzer-workshop"]
+	path = libfuzzer-workshop
+	url = https://github.com/Dor1s/libfuzzer-workshop.git
